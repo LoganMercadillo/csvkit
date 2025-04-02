@@ -159,8 +159,8 @@ class CSVKitUtility:
     def _init_common_parser(self):
         """
         Prepare a base argparse argument parser so that flags are consistent across different shell command tools.
-        If you want to constrain which common args are present, you can pass a string for 'omitflags'. Any argument
-        whose single-letter form is contained in 'omitflags' will be left out of the configured parser. Use 'f' for
+        If you want to constrain which common args are present, you can pass a string for 'override_flags'. Any argument
+        whose single-letter form is contained in 'override_flags' will be left out of the configured parser. Use 'f' for
         file.
         """
         self.argparser = argparse.ArgumentParser(description=self.description, epilog=self.epilog)
